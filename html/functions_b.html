@@ -30,7 +30,7 @@
   <td id="projectlogo"><img alt="Logo" src="astrobee-logo.png" height="100"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">NASA Astrobee Robot Software
-   &#160;<span id="projectnumber">0.16.2</span>
+   &#160;<span id="projectnumber">0.16.3</span>
    </div>
    <div id="projectbrief">Flight software for the Astrobee robot operating inside the International Space Station.</div>
   </td>
@@ -102,14 +102,8 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>Backproject()
 : <a class="el" href="classvision__common_1_1InverseDepthMeasurement.html#a54abcccbb6669e680ae98d35ea462344">vision_common::InverseDepthMeasurement</a>
 </li>
-<li>bag_
-: <a class="el" href="classekf__bag_1_1EkfBag.html#a30f545280fde10023c7d929c702534c0">ekf_bag::EkfBag</a>
-</li>
 <li>bag_name
 : <a class="el" href="structlocalization__analysis_1_1LiveMeasurementSimulatorParams.html#a04ae9b6ca788eca4df3d50f6e7bcc70f">localization_analysis::LiveMeasurementSimulatorParams</a>
-</li>
-<li>bag_start_time_
-: <a class="el" href="classekf__bag_1_1EkfBag.html#ae3f58d53029261e5470519b564ea1f0f">ekf_bag::EkfBag</a>
 </li>
 <li>BagImuFilterer()
 : <a class="el" href="classlocalization__analysis_1_1BagImuFilterer.html#a0a1fac659a1244ddd14d6cd621f273f7">localization_analysis::BagImuFilterer</a>
@@ -186,6 +180,9 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>BatteryTemperatureConversion()
 : <a class="el" href="classeps__driver_1_1EpsDriverNode.html#aa38da3ff5c24078a27aae9535ba055e6">eps_driver::EpsDriverNode</a>
 </li>
+<li>BayerImageCallback()
+: <a class="el" href="classdebayer_1_1DebayerNodelet.html#a9479b7539637544751c5c85424051c39">debayer::DebayerNodelet</a>
+</li>
 <li>BBXFreeNodes()
 : <a class="el" href="classoctoclass_1_1OctoClass.html#a0994ddc06719acb08641335dda60c353">octoclass::OctoClass</a>
 </li>
@@ -197,10 +194,6 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 </li>
 <li>beads
 : <a class="el" href="classtraj__opt_1_1NonlinearTrajectory.html#a1fe707e018542ea3418acb75e5f456dc">traj_opt::NonlinearTrajectory</a>
-</li>
-<li>begin()
-: <a class="el" href="classekf__bag_1_1TrackedOFFeatures.html#aefb74c58c29aa9fdd0928edfdbe992ca">ekf_bag::TrackedOFFeatures</a>
-, <a class="el" href="classekf__bag_1_1TrackedSMFeatures.html#ae5d7242855e7d4e0908efc0f1292a39f">ekf_bag::TrackedSMFeatures</a>
 </li>
 <li>behind_cam
 : <a class="el" href="structsparse__mapping_1_1FilterStats.html#ae8f829c734b073511701b880a24d3e9b">sparse_mapping::FilterStats</a>
@@ -244,9 +237,6 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>bias_covariance()
 : <a class="el" href="classlocalization__common_1_1CombinedNavStateCovariances.html#a7cf498cd20cbb5f7ceb50fd4af1cd409">localization_common::CombinedNavStateCovariances</a>
 </li>
-<li>bias_file_
-: <a class="el" href="classekf_1_1EkfWrapper.html#a568d91e7e92149e29539fbcd7ac66ef4">ekf::EkfWrapper</a>
-</li>
 <li>bias_noise
 : <a class="el" href="structlocalization__common_1_1CombinedNavStateNoise.html#a353aa43d39b6d2ea8db0b644b7ef82de">localization_common::CombinedNavStateNoise</a>
 </li>
@@ -258,18 +248,6 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 </li>
 <li>bias_prior_error_label_
 : <a class="el" href="classlocalization__rviz__plugins_1_1LocalizationGraphPanel.html#a42ad7c5002bf82b71fa9cfd836d073ac">localization_rviz_plugins::LocalizationGraphPanel</a>
-</li>
-<li>bias_required_observations_
-: <a class="el" href="classekf_1_1EkfWrapper.html#abba589314b0745d50d7582e61b015351">ekf::EkfWrapper</a>
-</li>
-<li>bias_reset_count_
-: <a class="el" href="classekf_1_1EkfWrapper.html#a07737099305d696ceaec844794ecf4a4">ekf::EkfWrapper</a>
-</li>
-<li>bias_reset_sums_
-: <a class="el" href="classekf_1_1EkfWrapper.html#a39af39d4e5e4b0d7cedb92d841f64e49">ekf::EkfWrapper</a>
-</li>
-<li>bias_srv_
-: <a class="el" href="classekf_1_1EkfWrapper.html#a3e52fc987c86ce1c80a917eee973f38a">ekf::EkfWrapper</a>
 </li>
 <li>big_reproj_err
 : <a class="el" href="structsparse__mapping_1_1FilterStats.html#a265497554b54069a00d6ffb136b47f94">sparse_mapping::FilterStats</a>
@@ -404,7 +382,7 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 : <a class="el" href="structvision__common_1_1BriskFeatureDetectorAndMatcherParams.html#a841efd6cb5fc8dbe3c5856632e80b79b">vision_common::BriskFeatureDetectorAndMatcherParams</a>
 </li>
 <li>BRISK_Impl()
-: <a class="el" href="classinterest__point_1_1BRISK__Impl.html#ab594fe5372e5b2933f213bd0018ce66c">interest_point::BRISK_Impl</a>
+: <a class="el" href="classinterest__point_1_1BRISK__Impl.html#ac25d56753a4087e74062890badefc583">interest_point::BRISK_Impl</a>
 </li>
 <li>brisk_octaves
 : <a class="el" href="structvision__common_1_1BriskFeatureDetectorAndMatcherParams.html#af38e0f71fd69e02a039901b26c425c42">vision_common::BriskFeatureDetectorAndMatcherParams</a>
@@ -419,7 +397,7 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 : <a class="el" href="classvision__common_1_1BriskFeatureDetectorAndMatcher.html#ae1de9fd1f1f2d563846df6b010161a7c">vision_common::BriskFeatureDetectorAndMatcher</a>
 </li>
 <li>BriskLayer()
-: <a class="el" href="classinterest__point_1_1BriskLayer.html#a645872bbca4bcba78cfa1f85a213a7af">interest_point::BriskLayer</a>
+: <a class="el" href="classinterest__point_1_1BriskLayer.html#a674777b43f6d92ba9172568b0cffe3d3">interest_point::BriskLayer</a>
 </li>
 <li>BriskScaleSpace()
 : <a class="el" href="classinterest__point_1_1BriskScaleSpace.html#a4753dc176c542ec54e0b735bedb9f2ae">interest_point::BriskScaleSpace</a>
@@ -472,6 +450,9 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>BuildAccessControlStateToRapid()
 : <a class="el" href="classdds__ros__bridge_1_1DdsRosBridge.html#a38166d38e9d53f743df6436b22972e53">dds_ros_bridge::DdsRosBridge</a>
 </li>
+<li>BuildAccessControlStateToRos()
+: <a class="el" href="classground__dds__ros__bridge_1_1GroundDdsRosBridge.html#afa32ef8283296f1367087d72e9f7b710">ground_dds_ros_bridge::GroundDdsRosBridge</a>
+</li>
 <li>BuildAckToRapid()
 : <a class="el" href="classdds__ros__bridge_1_1DdsRosBridge.html#adca36bd5bb4dbb8ecad31e2c6eabc85b">dds_ros_bridge::DdsRosBridge</a>
 </li>
@@ -498,6 +479,7 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 </li>
 <li>BuildCommandToRapid()
 : <a class="el" href="classdds__ros__bridge_1_1DdsRosBridge.html#ae7d37722abbbd4e463b83600a10e6744">dds_ros_bridge::DdsRosBridge</a>
+, <a class="el" href="classground__dds__ros__bridge_1_1GroundDdsRosBridge.html#a3b6ea9d7ff94e7b1030cf38f99e44091">ground_dds_ros_bridge::GroundDdsRosBridge</a>
 </li>
 <li>BuildCompressedFileAckToRapid()
 : <a class="el" href="classdds__ros__bridge_1_1DdsRosBridge.html#ac0fccd55a302dca701f6143b9edd0cd6">dds_ros_bridge::DdsRosBridge</a>
@@ -532,6 +514,9 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>BuildGncFamCmdStateToRapid()
 : <a class="el" href="classdds__ros__bridge_1_1DdsRosBridge.html#a0fce7e0fbfe0e7fcaabe22030d53e3d5">dds_ros_bridge::DdsRosBridge</a>
 </li>
+<li>BuildGuestScienceDataToRos()
+: <a class="el" href="classground__dds__ros__bridge_1_1GroundDdsRosBridge.html#a9d004d1d8f94568d1b50ca7dba2f3dca">ground_dds_ros_bridge::GroundDdsRosBridge</a>
+</li>
 <li>BuildGuestScienceToRapid()
 : <a class="el" href="classdds__ros__bridge_1_1DdsRosBridge.html#a8f5d51338e7e76b62f0b59bfe7a999e3">dds_ros_bridge::DdsRosBridge</a>
 </li>
@@ -556,11 +541,17 @@ $(document).ready(function(){initNavTree('functions_b.html',''); initResizable()
 <li>BuildPoseToPosition()
 : <a class="el" href="classdds__ros__bridge_1_1DdsRosBridge.html#ad9100f5a7d65c0149fee5527d66fee31">dds_ros_bridge::DdsRosBridge</a>
 </li>
+<li>BuildPositionToOdom()
+: <a class="el" href="classground__dds__ros__bridge_1_1GroundDdsRosBridge.html#abe5703d11fe7baa22b3545e3c0fdaa12">ground_dds_ros_bridge::GroundDdsRosBridge</a>
+</li>
 <li>BuildRapidToRos()
 : <a class="el" href="classdds__ros__bridge_1_1AstrobeeAstrobeeBridge.html#a277266e6c76bc211cf988c4cdf71a345">dds_ros_bridge::AstrobeeAstrobeeBridge</a>
 </li>
 <li>BuildRosToRapid()
 : <a class="el" href="classdds__ros__bridge_1_1AstrobeeAstrobeeBridge.html#ab9ad7362d5461807a07d764fd77d32ec">dds_ros_bridge::AstrobeeAstrobeeBridge</a>
+</li>
+<li>BuildSensorImageToRos()
+: <a class="el" href="classground__dds__ros__bridge_1_1GroundDdsRosBridge.html#ac64a42f258e5c6726efdd7f1dcbeeba2">ground_dds_ros_bridge::GroundDdsRosBridge</a>
 </li>
 <li>BuildStringToTextMessage()
 : <a class="el" href="classdds__ros__bridge_1_1DdsRosBridge.html#a6c68167067c31799a3c8e20ccb61ab7c">dds_ros_bridge::DdsRosBridge</a>

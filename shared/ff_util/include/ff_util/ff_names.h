@@ -312,6 +312,7 @@
 #define SERVICE_LOCALIZATION_ML_ENABLE              "loc/ml/enable"
 #define SERVICE_LOCALIZATION_HR_ENABLE              "loc/hr/enable"
 #define SERVICE_LOCALIZATION_PL_ENABLE              "loc/pl/enable"
+#define SERVICE_LOCALIZATION_RESET_MAP              "loc/ml/reset_map"
 
 // Localization manager
 
@@ -435,7 +436,6 @@
 #define SERVICE_HARDWARE_EPS_GET_BOARD_INFO         "hw/eps/get_board_info"
 #define SERVICE_HARDWARE_EPS_CLEAR_TERMINATE        "hw/eps/clear_terminate"
 
-#define SERVICE_HARDWARE_BAYER_ENABLE               "hw/cam_nav_bayer/enable"
 #define SERVICE_HARDWARE_PERCHING_ARM_ENABLE        "hw/arm/enable_arm"
 #define SERVICE_HARDWARE_PERCHING_ARM_DIST_VEL      "hw/arm/set_dist_vel"
 #define SERVICE_HARDWARE_PERCHING_ARM_PROX_VEL      "hw/arm/set_prox_vel"

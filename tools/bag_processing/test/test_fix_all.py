@@ -18,6 +18,7 @@
 
 import glob
 import os
+import subprocess
 import sys
 import unittest
 
@@ -32,19 +33,32 @@ def dosys(cmd):
     return ret
 
 
+def get_path(ros_package, subpath):
+    cmd = ["catkin_find", "--first-only", ros_package, subpath]
+    return subprocess.check_output(cmd).decode("utf-8").strip()
+
+
 class TestFixAll(unittest.TestCase):
+    def get_test_bags_folder(self):
+        return get_path("bag_processing", "test/bags")
+
     def test_fix_all(self):
-        bp_folder = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-        fix_all = os.path.join(bp_folder, "scripts/rosbag_fix_all.py")
-        bags_folder = os.path.join(bp_folder, "test/bags")
+        fix_all = get_path("bag_processing", "scripts/rosbag_fix_all.py")
+        bags_folder = self.get_test_bags_folder()
         bags = os.path.join(bags_folder, "*.bag")
 
         bag_list = glob.glob(bags)
-        self.assertIsNot(len(bag_list), 0)  # sanity check bags path
+        self.assertIsNot(len(bag_list), 0)  # check test bags exist
 
-        fix_all_return_value = dosys("%s %s" % (fix_all, bags))
-        self.assertIs(fix_all_return_value, 0)  # check bags fixed
-        dosys("rm %s/*.fix_all.bag" % bags_folder)
+        fix_all_return_value = dosys("%s -d %s" % (fix_all, bags))
+        self.assertIs(fix_all_return_value, 0)  # check script success
+
+        fixed_bags = os.path.join(bags_folder, "*.fix_all.bag")
+        fixed_bag_list = glob.glob(fixed_bags)
+        self.assertEquals(len(bag_list), len(fixed_bag_list))  # check # output files
+
+        # cleanup
+        dosys("rm %s" % fixed_bags)
 
 
 if __name__ == "__main__":
